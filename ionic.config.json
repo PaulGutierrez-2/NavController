@@ -1,0 +1,7 @@
+{
+  "name": "navController",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
