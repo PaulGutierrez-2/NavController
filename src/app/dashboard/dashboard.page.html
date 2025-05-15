@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">dashboard</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Dashboard</ion-card-title>
+      <ion-card-subtitle>BIENVENIDO A TU DASHBOARD</ion-card-subtitle>
+      <ion-button (click)="navigateBack()">VOLVER A</ion-button>
+      <ion-button (click)="navigateRoot('/home')">HOME</ion-button>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Este es el contenido del dashboard.</p>
+      <p>Puedes agregar más información aquí.</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
