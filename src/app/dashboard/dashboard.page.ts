@@ -13,16 +13,19 @@ import { NavController } from '@ionic/angular';
 })
 export class DashboardPage implements OnInit {
 
+  // Constructor que inyecta el servicio NavController para manejar la navegación
   constructor(private navCtrl: NavController) { }
 
   ngOnInit() {
   }
 
+  // Método para navegar hacia atrás, redirigiendo al usuario a la página de inicio de sesión
   navigateBack() {
-    this.navCtrl.navigateBack('/login');
+    this.navCtrl.navigateBack('/login'); // Navega a la ruta '/login'
   }
 
+  // Método para navegar a una página específica como raíz de la pila de navegación
   navigateRoot(page: string) {
-    this.navCtrl.navigateRoot(page);
+    this.navCtrl.navigateRoot(page); // Navega a la página especificada como raíz
   }
 }

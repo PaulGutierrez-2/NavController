@@ -9,9 +9,11 @@ import { Router, RouterModule } from '@angular/router';
   imports: [IonButton, IonHeader, IonToolbar, IonTitle, IonContent, RouterModule],
 })
 export class HomePage {
+  // Constructor que inyecta el servicio Router para manejar la navegación
   constructor(private router: Router) {}
 
+  // Método que navega a la página de inicio de sesión
   navigateToLogin() {
-    this.router.navigate(['/login']);
+    this.router.navigate(['/login']); // Utiliza el servicio Router para redirigir a la ruta '/login'
   }
 }
